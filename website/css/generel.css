@@ -1,0 +1,63 @@
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px; /* Dette giver de bløde hjørner */
+}
+body {
+  font-family: sans-serif;
+  background-color: #abd7f4;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-family: serif;
+  color: #0d1a29;
+}
+
+/* Menuen er nu lodret igen */
+nav ul {
+  /* display: flex;  <-- Denne er fjernet for at gøre den lodret */
+  /* gap: 20px;     <-- Denne er fjernet */
+  list-style: none;
+  padding: 20px;
+  /* background: #a1abba; <-- Fjern denne hvis du ikke vil have den grå bjælke i toppen */
+}
+
+nav li {
+  margin-bottom: 10px; /* Giver lidt luft mellem punkterne nedad */
+}
+
+nav a {
+  text-decoration: none;
+  color: #0d1a29; /* Ændret til mørk farve så man kan læse det på lyseblå */
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Styling af statistikoversigten (dl) */
+.stat_liste {
+  display: grid;
+  grid-template-columns: auto 1fr; /* 'auto' til teksten, '1fr' tager resten af pladsen */
+  gap: 10px 30px;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 400px; /* Sørger for at listen ikke bliver alt for bred */
+}
+
+.stat_liste dt {
+  font-weight: bold;
+  color: #0d1a29;
+}
+
+.stat_liste dd {
+  margin: 0;
+  text-align: right;
+  font-weight: normal;
+}
